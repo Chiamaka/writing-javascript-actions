@@ -21,4 +21,4 @@ jobs:
         with:
           first-greeting: "Hugo boss"
           second-greeting: "Chi"
-          third-greeing: "MG"
+          third-greeting: "MG"
