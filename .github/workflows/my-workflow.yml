@@ -19,6 +19,4 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/hello-world
         with:
-          first-greeting: "Hugo boss"
-          second-greeting: "Chi"
           third-greeting: "MG"
