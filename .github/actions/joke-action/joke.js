@@ -4,8 +4,8 @@ const options = {
     method: "GET",
     uri: "https://icanhazdadkoke.com/",
     headers: {
-        Accept: "application/json"
-        "User-Agent": "Writing Javascript action Githun Learning Lab course."
+        Accept: "application/json",
+        "User-Agent": "Writing Javascript action Github Learning Lab course."
     },
     json: true
 }
