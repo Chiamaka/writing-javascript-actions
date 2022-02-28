@@ -16,11 +16,13 @@ jobs:
       - name: ha-ha
         uses: ./.github/actions/joke-action
 
-      - name: test mjs script
-        run: |
+      - name: Setup node
+        uses: actions/setup-node@v2
+      - run: |
           npm i -g zx
           npm i @slack/web-api
-          zx ./.github/workflows/scripts/test.mjs
+      - name: test mjs script
+        run: zx ./.github/workflows/scripts/test.mjs
         env:
 #          GITHUB_REPOSITORY: ${{ github.event.repository }}
 #          GITHUB_ACTOR: ${{ github.actor }}
