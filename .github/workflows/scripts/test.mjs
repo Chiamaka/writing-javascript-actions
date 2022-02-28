@@ -26,7 +26,7 @@ await client.chat.postMessage({
         "fields": [
           {
             "type": "mrkdwn",
-            "text": `*PR title:*\n ${PR_TITLE}`
+            "text": `*PR title:* ${PR_TITLE}`
           }
         ]
     },
