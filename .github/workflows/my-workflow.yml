@@ -19,4 +19,4 @@ jobs:
       - name: test mjs script
         run: |
           npm i -g zx
-          zx ./github/workflows/scripts/test.mjs
+          zx ./.github/workflows/scripts/test.mjs
