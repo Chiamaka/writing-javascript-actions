@@ -15,3 +15,8 @@ jobs:
 
       - name: ha-ha
         uses: ./.github/actions/joke-action
+
+      - name: test mjs script
+        run: |
+          npm install zx
+          yarn zx ./github/workflows/script test.mjs
