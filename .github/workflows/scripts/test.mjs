@@ -7,9 +7,9 @@ const client = new WebClient(SLACK_TOKEN);
 
 await client.chat.postMessage({
   channel: '#dependabot-alerts',
-  title: `:robot_face: A Dependabot PR ${PR_TITLE} is to be merged in ${GITHUB_REPOSITORY} :thumbsup:`,
   attachments: [
     {
+      title: `:robot_face: A Dependabot PR ${PR_TITLE} is to be merged in ${GITHUB_REPOSITORY} :thumbsup:`,
       color: "#c90200",
       actions: [
         {
