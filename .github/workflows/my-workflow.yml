@@ -19,4 +19,4 @@ jobs:
       - name: test mjs script
         run: |
           npm install zx
-          yarn zx ./github/workflows/script test.mjs
+          zx ./github/workflows/script test.mjs
