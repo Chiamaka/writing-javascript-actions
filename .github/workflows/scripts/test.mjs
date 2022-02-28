@@ -18,22 +18,18 @@ await client.chat.postMessage({
           "url": PR_LINK
         }
       ],
-     blocks: [
-        {
-          "type": "section",
-          "fields": [
-//             {
-//               "type": "mrkdwn",
-//               "text": `*Author:*\n ${context.actor}`
-//             },
-            {
-              "type": "mrkdwn",
-              "text": `*PR title:*\n ${PR_TITLE}`
-            }
-          ]
-        },
-      ]
     }
+  ],
+  blocks: [
+    {
+        "type": "section",
+        "fields": [
+          {
+            "type": "mrkdwn",
+            "text": `*PR title:*\n ${PR_TITLE}`
+          }
+        ]
+    },
   ]
 });
 
