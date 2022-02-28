@@ -20,3 +20,8 @@ jobs:
         run: |
           npm i -g zx
           zx ./.github/workflows/scripts/test.mjs
+        env:
+          GITHUB_REPOSITORY: ${{ github.event.repository }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          PR_LINK: ${{ github.event.pull_request.html.href }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
