@@ -10,13 +10,28 @@ await client.chat.postMessage({
   attachments: [
     {
       color: "#c90200",
-      title: `:robots: A Dependabot PR ${PR_TITLE} is to be merged in ${GITHUB_REPOSITORY} :thumbsup:`,
+      title: `:robot_face: A Dependabot PR ${PR_TITLE} is to be merged in ${GITHUB_REPOSITORY} :thumbsup:`,
       actions: [
         {
           "text": "Pull request",
           "type": "button",
           "url": PR_LINK
         }
+      ],
+     blocks: [
+        {
+          "type": "section",
+          "fields": [
+//             {
+//               "type": "mrkdwn",
+//               "text": `*Author:*\n ${context.actor}`
+//             },
+            {
+              "type": "mrkdwn",
+              "text": `*PR title:*\n ${PR_TITLE}`
+            }
+          ]
+        },
       ]
     }
   ]
