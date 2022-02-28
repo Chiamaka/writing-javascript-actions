@@ -2,7 +2,7 @@
 
 import { WebClient } from '@slack/web-api';
 
-const { PR_LINK, PR_TITLE, SLACK_TOKEN } = process.env;
+const { GITHUB_REPOSITORY, PR_LINK, GITHUB_ACTOR, PR_TITLE, SLACK_TOKEN } = process.env;
 const client = new WebClient(SLACK_TOKEN);
 
 await client.chat.postMessage({
