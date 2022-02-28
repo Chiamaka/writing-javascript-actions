@@ -2,7 +2,7 @@
 
 import { WebClient } from '@slack/web-api';
 
-const { GITHUB_REPOSITORY, PR_LINK, GITHUB_ACTOR, PR_TITLE, SLACK_TOKEN } = process.env;
+const { PR_LINK, PR_TITLE, SLACK_TOKEN } = process.env;
 const client = new WebClient(SLACK_TOKEN);
 
 await client.chat.postMessage({
@@ -19,7 +19,7 @@ await client.chat.postMessage({
         },
         {
           "text": "Pull request",
-          "type": "button"
+          "type": "button",
           "url": PR_LINK
         }
       ]
