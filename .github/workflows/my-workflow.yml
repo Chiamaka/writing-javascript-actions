@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v2
       - run: |
           npm i -g zx
-          npm i @slack/web-api
+#          npm i @slack/web-api
       - name: test mjs script
         run: zx ./.github/workflows/scripts/test.mjs
         env:
