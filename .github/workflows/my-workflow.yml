@@ -23,5 +23,5 @@ jobs:
         env:
 #          GITHUB_REPOSITORY: ${{ github.event.repository }}
 #          GITHUB_ACTOR: ${{ github.actor }}
-          PR_LINK: ${{ github.event.pull_request }}
+          PR_LINK: ${{ github.event.pull_request.html_url }}
           PR_TITLE: ${{ github.event.pull_request.title }}
