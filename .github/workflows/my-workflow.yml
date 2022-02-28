@@ -18,5 +18,4 @@ jobs:
 
       - name: test mjs script
         run: |
-          npm install zx
-          zx ./github/workflows/script test.mjs
+          npx zx ./github/workflows/scripts/test.mjs
