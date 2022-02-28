@@ -10,13 +10,8 @@ await client.chat.postMessage({
   attachments: [
     {
       color: "#c90200",
-      title: `:robots: A Dependabot PR failed to be merged in ${GITHUB_REPOSITORY} :thumbsdown:`,
+      title: `:robots: A Dependabot PR ${PR_TITLE} is to be merged in ${GITHUB_REPOSITORY} :thumbsup:`,
       actions: [
-        {
-          "text": "Jira Ticket",
-          "type": "button",
-          "url": JIRA_ISSUE
-        },
         {
           "text": "Pull request",
           "type": "button",
