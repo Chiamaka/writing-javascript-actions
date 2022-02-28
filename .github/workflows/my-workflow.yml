@@ -19,9 +19,11 @@ jobs:
       - name: test mjs script
         run: |
           npm i -g zx
+          npm i @slack/web-api
           zx ./.github/workflows/scripts/test.mjs
         env:
 #          GITHUB_REPOSITORY: ${{ github.event.repository }}
 #          GITHUB_ACTOR: ${{ github.actor }}
           PR_LINK: ${{ github.event.pull_request.html_url }}
           PR_TITLE: ${{ github.event.pull_request.title }}
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
