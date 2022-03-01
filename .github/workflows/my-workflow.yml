@@ -22,6 +22,7 @@ jobs:
       - name: test mjs script
         run: |
           npm i -g zx
+          npm i @slack/web-api
           zx ./.github/workflows/scripts/test.mjs
         env:
 #          GITHUB_REPOSITORY: ${{ github.event.repository }}
