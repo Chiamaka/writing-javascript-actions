@@ -14,12 +14,15 @@ jobs:
 #      - name: ha-ha
 #        uses: ./.github/actions/joke-action
 
-      - name: Setup node
-        uses: actions/setup-node@v2
-      - run: |
-          npm i
+#      - name: Setup node
+#        uses: actions/setup-node@v2
+#      - run: |
+#          npm i
+
       - name: test mjs script
-        run: zx ./.github/workflows/scripts/test.mjs
+        run: |
+          npm i
+          zx ./.github/workflows/scripts/test.mjs
         env:
 #          GITHUB_REPOSITORY: ${{ github.event.repository }}
 #          GITHUB_ACTOR: ${{ github.actor }}
