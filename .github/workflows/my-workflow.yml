@@ -14,11 +14,10 @@ jobs:
 #      - name: ha-ha
 #        uses: ./.github/actions/joke-action
 
-#      - name: Setup node
-#        uses: actions/setup-node@v2
-#      - run: |
-#          npm i -g zx
-##          npm i @slack/web-api
+      - name: Setup node
+        uses: actions/setup-node@v2
+      - run: |
+          npm i
       - name: test mjs script
         run: zx ./.github/workflows/scripts/test.mjs
         env:
