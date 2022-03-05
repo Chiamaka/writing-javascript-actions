@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-(async function run() {
+async function run() {
     try {
         const issueTitle = core.getInput('issue-title');
         const jokeBody = core.getInput('joke');
@@ -18,4 +18,6 @@ const github = require('@actions/github');
     } catch(err) {
         core.setFailed(err.message);
     }
-})();
+};
+
+run()
