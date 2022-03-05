@@ -19,6 +19,6 @@ jobs:
 
       - name: create-issue
         uses: ./.github/actions/issue-maker
-        with:
+        with: # this is a way to pass the output of one action to another
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           joke: ${{ steps.jokes.outputs.joke-output }}
